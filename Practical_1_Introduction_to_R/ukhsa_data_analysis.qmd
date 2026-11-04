@@ -1,0 +1,29 @@
+---
+title: "Practical_1_Introduction_to_R/ukhsa_data_analysis."
+author: "Beatrice Hunt"
+format: html 
+---
+```{r}
+library(tidyverse)
+library(gt)
+```
+```{r}
+rhinovirus <- read_csv("data/ukhsa-chart-download-rhinovirus.csv")
+
+gt(head(rhinovirus))
+```
+```{r}
+antibiotics<- read_csv("ukhsa-chart-download copy.csv")
+gt(head(antibiotics))
+```
+```{r}
+ggplot(antibiotics,aes(
+  x = date,
+  y = metric_value
+)) +
+  geom_line(colour="black") + 
+  xlab("date") +
+  ylab("value") +
+  ggtitle("Value by date")
+```
+
