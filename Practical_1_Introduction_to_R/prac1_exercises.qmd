@@ -1,0 +1,45 @@
+---
+title: "Practical_1_Introduction_to_R/prac1_exercises.qmd"
+author: Beatrice 
+format: html 
+---
+```{r}
+round(3.14159)
+```
+
+```{r}
+round(3.14159, digits = 2)
+```
+```{r}
+print(rep(x=5, times=7))
+```
+```{r}
+my_variable <- 12
+my_variable <- 10
+print(my_variable)
+```
+
+```{r}
+x<-1234567890
+print(class(x))
+```
+```{r}
+x<-"hello"
+print(class(x))
+```
+```{r}
+x<-TRUE
+print(class(x))
+```
+```{r}
+cell_1<-"CX1"
+cell_2<-"CX2"
+treated_1<-TRUE 
+treated_2<-FALSE
+n_before_1 <- 5415
+n_before_2 <- 8123
+n_after_1 <- 1432
+n_after_2 <- 7543
+
+```
+
